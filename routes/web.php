@@ -48,7 +48,7 @@ Route::get('profile/delete','delete')->name('profile.delete');
 });
 
 use App\Http\Controllers\ProfileController as PublicProfileController;
-Route::get('/', [PublicProfileController::class, 'index'])->name('profile.index');
+Route::get('/profile', [PublicProfileController::class, 'index'])->name('profile.index');
 
 Auth::routes();
 
